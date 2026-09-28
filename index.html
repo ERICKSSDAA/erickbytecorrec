@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BYTE HOUSE | Tecnología</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo"><span>BYTE</span> HOUSE</a>
+    <nav class="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#celulares">Celulares</a>
+      <a href="#audio">Audio</a>
+      <a href="#monitores">Monitores</a>
+      <a href="#gaming">Gaming</a>
+    </nav>
+    <button class="cart-button" id="openCart">🛒 Carrito <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div>
+        <span class="tag">BYTE HOUSE · TECNOLOGÍA</span>
+        <h1>Tu próximo equipo<br><strong>empieza aquí.</strong></h1>
+        <p>Celulares gaming, smartphones, audio, monitores y accesorios. Marcas que buscas, en un solo lugar.</p>
+        <a class="button primary" href="#celulares">Ver celulares</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://i0.wp.com/intercompras.com/blog/wp-content/uploads/2025/07/celulares-gamer-1.webp?fit=1472%2C832&ssl=1" alt="Celular moderno">
+      </div>
+    </section>
+
+    <section class="section" id="celulares">
+      <div class="section-title">
+        <div>
+          <span class="tag dark">SMARTPHONES</span>
+          <h2>Celulares destacados</h2>
+        </div>
+        <p>Gaming, potencia, cámaras y rendimiento para cada estilo.</p>
+      </div>
+
+      <div class="brand-filters" id="brandFilters">
+        <button class="filter active" data-brand="Todos">Todos</button>
+        <button class="filter" data-brand="REDMAGIC">REDMAGIC</button>
+        <button class="filter" data-brand="ROG Phone">ROG Phone</button>
+        <button class="filter" data-brand="Nubia">Nubia</button>
+        <button class="filter" data-brand="Infinix GT">Infinix GT</button>
+        <button class="filter" data-brand="Samsung">Samsung</button>
+        <button class="filter" data-brand="Xiaomi">Xiaomi</button>
+        <button class="filter" data-brand="POCO">POCO</button>
+      </div>
+
+      <div class="products" id="phoneProducts"></div>
+    </section>
+
+    <section class="dark-section" id="gaming">
+      <div class="section-title light-title">
+        <div><span class="tag">GAMING</span><h2>Arma tu setup</h2></div>
+        <p>Potencia para jugar, crear y trabajar.</p>
+      </div>
+      <div class="mini-grid">
+        <article><img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=800&q=85" alt="Setup gaming"><h3>Monitores</h3><p>Alta tasa de refresco y gran resolución.</p></article>
+        <article><img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=800&q=85" alt="Parlante"><h3>Audio</h3><p>Parlantes y audífonos para disfrutar cada detalle.</p></article>
+        <article><img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=800&q=85" alt="Teclado gaming"><h3>Accesorios</h3><p>Teclados, mouse y periféricos gaming.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div><a class="logo" href="#inicio"><span>BYTE</span> HOUSE</a><p>Tecnología que te conecta.</p></div>
+      <div><h4>Contacto</h4><p>WhatsApp: +51 900 000 000</p><p>hola@bytehouse.pe</p></div>
+      <div><h4>Atención</h4><p>Lun - Sáb · 9:00 - 18:00</p><p>Perú</p></div>
+    </div>
+    <div class="copyright">© 2026 BYTE HOUSE · Todos los derechos reservados.</div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay">
+    <aside class="cart">
+      <div class="cart-header">
+        <h2>Mi carrito</h2>
+        <button id="closeCart">×</button>
+      </div>
+      <div id="cartItems"></div>
+      <div class="cart-footer">
+        <div><span>Total</span><strong id="cartTotal">S/ 0.00</strong></div>
+        <button class="button primary checkout" id="checkout">Finalizar compra</button>
+      </div>
+    </aside>
+  </div>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
